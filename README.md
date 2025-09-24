@@ -47,7 +47,7 @@ Each plant has **XP (experience points) and health levels** that dynamically cha
 ---
 
 ## Project Structure
-
+```
 PLANTCARE XP/
 |
 |---src/            #core application logic
@@ -66,7 +66,7 @@ operations
 |___README.md       #Project documentation
 |
 |___.env            #Python Variables
-
+```
 ## Quick Start
 
 ### Prerequisites
