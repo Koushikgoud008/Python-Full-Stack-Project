@@ -2,51 +2,50 @@
 
 ## 📌 Description
 **PlantCare XP** is a Python-based interactive project that simulates plant health monitoring, inspired by gamified apps like *Talking Tom*.  
-Each plant has **XP (experience points) and health levels** that dynamically change based on user actions and environmental factors like rain, soil quality, and fertilizers.  
-
+Each plant has **XP (experience points)** and **health levels** that dynamically change based on user actions and environmental factors like rain, soil quality, and fertilizers.  
 
 ---
 
 ## ✨ Features
 
 ### 🪴 Plant Health System
-- Plants have **XP/health points** shown as a progress bar or percentage.
+- Plants have **XP/health points** shown as a progress bar or percentage.  
 - Health changes dynamically based on care and conditions.
 
 ### 🌦️ Dynamic Factors
-- **Rainfall** → Increases hydration and boosts health.
-- **Soil Quality** → Determines how effective feeding/fertilizer will be.
-- **Feeding & Fertilizers** → Boost XP and plant growth.
-- **Neglect** → Health decreases if the plant isn’t cared for.
+- **Rainfall** → Increases hydration and boosts health.  
+- **Soil Quality** → Determines how effective feeding/fertilizer will be.  
+- **Feeding & Fertilizers** → Boost XP and plant growth.  
+- **Neglect** → Health decreases if the plant isn’t cared for.  
 
 ### 🎮 User Interactions
-- Actions: *Water Plant*, *Feed Plant*, *Fertilize*, *Check Soil*.
-- Plant mood changes (😊 happy, 😐 neutral, 😢 sad) based on health.
+- Actions: *Water Plant*, *Feed Plant*, *Fertilize*, *Check Soil*.  
+- Plant mood changes (😊 happy, 😐 neutral, 😢 sad) based on health.  
 
 ### 🏆 Gamification
-- **Level System** → Plants grow to higher levels as XP increases.
-- **Achievements/Badges** → Unlock milestones like “Green Thumb 🌿” or “Master Gardener 🌻”.
-- **Daily Rewards** → Incentives for regular plant care.
+- **Level System** → Plants grow to higher levels as XP increases.  
+- **Achievements/Badges** → Unlock milestones like “Green Thumb 🌿” or “Master Gardener 🌻”.  
+- **Daily Rewards** → Incentives for regular plant care.  
 
 ### 🗄️ Database (Supabase)
 - Stores:
-  - Plant stats (health, XP, levels)
-  - User profiles (multiple players supported)
-  - Interaction logs (watering times, feeding actions, etc.)
-- Syncs plant data across sessions.
+  - Plant stats (health, XP, levels)  
+  - User profiles (multiple players supported)  
+  - Interaction logs (watering times, feeding actions, etc.)  
+- Syncs plant data across sessions.  
 
 ### 🖥️ Frontend (Python CLI / GUI)
-- **CLI Mode** → Text-based menus and ASCII health bars.
-- **GUI Mode (Tkinter/PyQt)** → Plant image changes state based on health.
+- **CLI Mode** → Text-based menus and ASCII health bars.  
+- **GUI Mode (Tkinter/PyQt)** → Plant image changes state based on health.  
 
 ### 📊 Reports & Insights
-- View plant growth history with graphs (via Matplotlib).
-- Notifications/reminders when plant health is low.
-
+- View plant growth history with graphs (via Matplotlib).  
+- Notifications/reminders when plant health is low.  
 
 ---
 
-## Project Structure
+## 📂 Project Structure
+
 ```
 PLANTCARE XP/
 |
@@ -67,26 +66,29 @@ operations
 |
 |___.env            #Python Variables
 ```
-## Quick Start
 
-### Prerequisites
+---
 
-- Python 3.8 or higher
-- A SupaBase account
-- Git(Push,cloning)
+## 🚀 Quick Start
 
-### 1. clone or Download the Project
+### ✅ Prerequisites
+- Python **3.8+**  
+- A **Supabase account**  
+- Git (for cloning and pushing code)  
 
-# option 1 clone with Git
+---
+
+### 1. Clone or Download the Project
+```bash
+# Option 1: Clone with Git
+
 git clone https://github.com/Koushikgoud008/Python-Full-Stack-Project.git
 
-# option 2 : Download and Extract the ZIP file
-
-### 2. INstall Dependencies
+# Option 2: Download and Extract the ZIP file
 
 # Install all required Pythin packages
 pip install -r requirements.txt
-
+```
 ### 3. Set up supabase Database
 
 1.Create a supabase Project:
@@ -132,21 +134,23 @@ CREATE TABLE interactions (
 1. Create a `.env` file in the project root
 
 2.Add your Supabase credentials to `.env`:
+```
 SUPABASE_URL = 
 SUPABASE_KEY = 
-
+```
 ### 5. Run the Application
 
 ## streamlit Frontend
+```
 streamlit run frontend/app.py
 
 The app will open in your browser at `http://localhost:8501`
-
+```
 ## FastAPI Backend
-
+```
 cd api
 python main.py
-
+```
 The API will be avsilsble at `http://localhost:8000`
 
 ## How to use 
