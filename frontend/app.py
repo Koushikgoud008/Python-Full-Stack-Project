@@ -9,7 +9,7 @@ from streamlit.components.v1 import html # Required for robust HTML/SVG renderin
 
 # --- Configuration ---
 # NOTE: If running FastAPI locally, ensure this URL is correct.
-API_BASE_URL = "http://localhost:8000"
+API_BASE_URL = "https://plant-care-xp.onrender.com/"
 
 # --- State Management Keys ---
 USER_KEY = 'current_user'
